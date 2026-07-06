@@ -1,9 +1,9 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { PageVitrineDesktop } from "./page/PageVitrineDesktop";
+import { App } from "./page/App";
 
 createRoot(document.getElementById("app") as HTMLElement).render(
   <StrictMode>
-    <PageVitrineDesktop />
+    <App />
   </StrictMode>,
 );
