@@ -1,8 +1,10 @@
 import { Flavor, FlavorProps } from "./Flavor";
 import image from "../assets/orange.png";
+import drinkImage from "../assets/orange_drink.png";
 
 const sunshineOrange: FlavorProps = {
   backgroundImage: image,
+  drinkImage,
   label: "Sunshine Orange flavor",
   title: ["Sunshine", "Orange"],
   copy: [
