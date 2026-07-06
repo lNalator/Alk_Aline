@@ -1,5 +1,3 @@
-import { Card, CardContent } from "../../../../components/ui/card";
-
 export type FlavorCopyLine = {
   text: string;
   underlined?: boolean;
@@ -20,9 +18,9 @@ export type FlavorSectionProps = {
 
 const copyStyles = {
   headline:
-    "text-[38px] leading-[0.95] sm:text-[46px] lg:text-[56px] xl:text-[64px]",
+    "text-[32px] leading-[0.95] sm:text-[42px] lg:text-[52px] xl:text-[64px]",
   body:
-    "text-[24px] leading-none sm:text-[28px] lg:text-[34px] xl:text-[40px]",
+    "text-[22px] leading-none sm:text-[28px] lg:text-[34px] xl:text-[40px]",
 } satisfies Record<FlavorCopyBlock["variant"], string>;
 
 const textCardStyles = {
@@ -43,11 +41,10 @@ export const FlavorSection = ({
       className="relative w-full bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <Card className="h-auto w-full rounded-none border-0 bg-transparent shadow-none">
-        <CardContent className="mx-auto grid min-h-[720px] w-full grid-cols-1 content-start gap-10 px-6 py-16 sm:px-10 sm:py-24 lg:min-h-[1080px] lg:grid-cols-[minmax(0,705px)_minmax(220px,1fr)] lg:gap-12 lg:px-[72px] lg:py-[180px] xl:px-[100px] xl:py-[220px]">
+      <div className="mx-auto grid min-h-[720px] w-full grid-cols-1 content-start gap-10 px-5 py-12 sm:px-10 sm:py-20 lg:min-h-[clamp(720px,56.25vw,1080px)] lg:grid-cols-[minmax(0,705px)_minmax(220px,1fr)] lg:gap-12 lg:px-[clamp(4.5rem,5.25vw,6.25rem)] lg:py-[clamp(7rem,11vw,13.75rem)]">
           <article className="flex max-w-[705px] flex-col items-start gap-8 lg:gap-10 xl:gap-[55px]">
             <h2
-              className={`${textCardStyles.block} font-h1 text-[56px] font-[number:var(--h1-font-weight)] leading-[0.95] tracking-[var(--h1-letter-spacing)] text-white [font-style:var(--h1-font-style)] sm:text-[72px] lg:text-[84px] xl:text-[96px]`}
+              className={`${textCardStyles.block} font-h1 text-[48px] font-[number:var(--h1-font-weight)] leading-[0.95] tracking-[var(--h1-letter-spacing)] text-white [font-style:var(--h1-font-style)] sm:text-[64px] lg:text-[80px] xl:text-[96px]`}
             >
               {title.map((line, index) => (
                 <span key={line}>
@@ -68,11 +65,7 @@ export const FlavorSection = ({
                   {block.lines.map((line, lineIndex) => (
                     <span
                       key={`${line.text}-${lineIndex}`}
-                      className={
-                        line.underlined
-                          ? textCardStyles.inline
-                          : undefined
-                      }
+                      className={line.underlined ? textCardStyles.inline : undefined}
                     >
                       {line.text}
                       {lineIndex < block.lines.length - 1 && <br />}
@@ -95,8 +88,7 @@ export const FlavorSection = ({
               ))}
             </p>
           </aside>
-        </CardContent>
-      </Card>
+      </div>
     </section>
   );
 };
