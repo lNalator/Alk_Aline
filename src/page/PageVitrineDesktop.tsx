@@ -1,12 +1,10 @@
-import { BrandFooterSection } from "./sections/BrandFooterSection/BrandFooterSection";
-import { HeroBannerSection } from "./sections/HeroBannerSection/HeroBannerSection";
-import { RetroVioletFlavorSection } from "./sections/RetroVioletFlavorSection/RetroVioletFlavorSection";
-import { SunshineOrangeFlavorSection } from "./sections/SunshineOrangeFlavorSection/SunshineOrangeFlavorSection";
+import { BrandFooter } from "../components/BrandFooter";
+import { HeroBanner } from "../components/HeroBanner";
+import { RetroVioletFlavor } from "../components/RetroVioletFlavorSection";
+import { SunshineOrangeFlavor } from "../components/SunshineOrangeFlavor";
+import Landing from "../assets/Landing.png";
+import Logo from "../assets/Logo.png";
 
-const heroImage = {
-  alt: "Landing",
-  src: "/Landing.png",
-};
 
 export const PageVitrineDesktop = (): JSX.Element => {
   return (
@@ -14,17 +12,17 @@ export const PageVitrineDesktop = (): JSX.Element => {
       <section className="relative w-full overflow-hidden bg-black">
         <img
           className="aspect-video h-auto w-full object-cover object-center"
-          alt={heroImage.alt}
-          src={heroImage.src}
+          alt="Hero Landing"
+          src={Landing}
         />
         <img
-          src="/Logo.png"
+          src={Logo}
           alt="ALK ALINE"
           className="absolute bottom-3 right-3 w-40 sm:w-80 sm:bottom-6 sm:right-6 lg:bottom-10 lg:right-10 lg:w-auto"
         />
       </section>
-      <HeroBannerSection />
-      <RetroVioletFlavorSection />
+      <HeroBanner />
+      <RetroVioletFlavor />
       <section className="w-full bg-black py-3 sm:py-4">
         <div className="mx-auto flex w-full max-w-[1400px] justify-center px-4 sm:px-8">
           <button
@@ -35,8 +33,8 @@ export const PageVitrineDesktop = (): JSX.Element => {
           </button>
         </div>
       </section>
-      <SunshineOrangeFlavorSection />
-      <BrandFooterSection />
+      <SunshineOrangeFlavor />
+      <BrandFooter />
     </main>
   );
 };

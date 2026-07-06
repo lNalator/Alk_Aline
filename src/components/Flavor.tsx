@@ -8,7 +8,7 @@ export type FlavorCopyBlock = {
   variant: "headline" | "body";
 };
 
-export type FlavorSectionProps = {
+export type FlavorProps = {
   backgroundImage: string;
   copy: FlavorCopyBlock[];
   flavorNotes: string[];
@@ -28,13 +28,13 @@ const textCardStyles = {
   inline: "box-decoration-clone bg-black/90 px-1.5 py-0.5",
 };
 
-export const FlavorSection = ({
+export const Flavor = ({
   backgroundImage,
   copy,
   flavorNotes,
   label,
   title,
-}: FlavorSectionProps): JSX.Element => {
+}: FlavorProps): JSX.Element => {
   return (
     <section
       aria-label={label}

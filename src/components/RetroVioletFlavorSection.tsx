@@ -1,10 +1,8 @@
-import {
-  FlavorSection,
-  type FlavorSectionProps,
-} from "../FlavorSection/FlavorSection";
+import { Flavor, FlavorProps } from "./Flavor";
+import image from "../assets/violet.png";
 
-const retroViolet: FlavorSectionProps = {
-  backgroundImage: "/violet.png",
+const retroViolet: FlavorProps = {
+  backgroundImage: image,
   label: "Retro Violet flavor",
   title: ["Retro", "Violet"],
   copy: [
@@ -33,6 +31,6 @@ const retroViolet: FlavorSectionProps = {
   flavorNotes: ["Blackcurrant", "Grapefruit", "Dragonfruit"],
 };
 
-export const RetroVioletFlavorSection = (): JSX.Element => (
-  <FlavorSection {...retroViolet} />
+export const RetroVioletFlavor = (): JSX.Element => (
+  <Flavor {...retroViolet} />
 );

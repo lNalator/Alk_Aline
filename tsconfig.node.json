@@ -5,6 +5,10 @@
     "lib": [
       "ES2023"
     ],
+    "typeRoots": [
+      "./src/types",
+      "./node_modules/@types"
+    ],
     "module": "ESNext",
     "skipLibCheck": true,
     "moduleResolution": "bundler",

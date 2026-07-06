@@ -1,17 +1,24 @@
+import EmbarkLogo from "../assets/embark_logo.svg";
+import NexonLogo from "../assets/nexon_logo.svg";
+import PxlLogo from "../assets/pxl_logo.svg";
+import TheFinalsLogo from "../assets/thefinals_logo.svg";
+import AlkLogo from "../assets/alk_logo.svg";
+
 const footerLinks = [
   "https://www.reachthefinals.com/",
   "https://pxlpowerup.se/",
 ];
 
+
 const partnerLogos = [
-  { alt: "Embark Studios", src: "/embark_logo.svg" },
-  { alt: "Nexon", src: "/nexon_logo.svg" },
-  { alt: "PXL", src: "/pxl_logo.svg" },
-  { alt: "The Finals", src: "/thefinals_logo.svg" },
-  { alt: "ALK ALINE", src: "/alk_logo.svg" },
+  { alt: "Embark Studios", src: EmbarkLogo },
+  { alt: "Nexon", src: NexonLogo },
+  { alt: "PXL", src: PxlLogo },
+  { alt: "The Finals", src: TheFinalsLogo },
+  { alt: "ALK ALINE", src: AlkLogo },
 ];
 
-export const BrandFooterSection = (): JSX.Element => {
+export const BrandFooter = (): JSX.Element => {
   return (
     <footer className="w-full bg-neutral-950 px-4 py-8 sm:px-8 sm:py-10 lg:px-[100px] lg:py-[50px]">
       <div className="mx-auto flex w-full max-w-[1720px] flex-col gap-8 lg:gap-12">

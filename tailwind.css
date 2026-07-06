@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "Ultramax Vision";
-  src: url("/fonts/Ultramax-Vision.ttf") format("truetype");
+  src: url("src/assets/fonts/Ultramax-Vision.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: "Saira Condensed";
-  src: url("/fonts/SairaCondensed-Regular.ttf") format("truetype");
+  src: url("src/assets/fonts/SairaCondensed-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
   font-display: swap;

@@ -1,6 +1,6 @@
 const heroWords = ["CAN", "YOU", "REACH", "THE FINALS"];
 
-export const HeroBannerSection = (): JSX.Element => {
+export const HeroBanner = (): JSX.Element => {
   return (
     <section className="relative w-full" aria-label="Can you reach The Finals?">
       <div className="w-full bg-neutral-950">
