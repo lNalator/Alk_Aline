@@ -63,14 +63,36 @@ export const BrandFooter = (): JSX.Element => {
               ))}
             </div>
             <div className="flex items-center gap-2 text-white sm:gap-6">
-              <FaInstagram className="h-6 w-auto max-w-full hover:text-[#ff8563] transition-all object-contain md:h-10" />
-              <FaXTwitter className="h-6 w-auto max-w-full hover:text-[#ff8563] transition-all object-contain md:h-10" />
-              <FaTiktok className="h-6 w-auto max-w-full hover:text-[#ff8563] transition-all object-contain md:h-10" />
-              <FaYoutube className="h-6 w-auto max-w-full hover:text-[#ff8563] transition-all object-contain md:h-10" />
-              <FaTwitch className="h-6 w-auto max-w-full hover:text-[#ff8563] transition-all object-contain md:h-10" />
+              <a
+                href="https://www.instagram.com/reachthefinals/?hl=fr"
+                target="_blank"
+              >
+                <FaInstagram className="h-6 w-auto max-w-full hover:text-[#ff8563] transition-all object-contain md:h-10" />
+              </a>
+              <a href="https://twitter.com/reachthefinals"
+                target="_blank"
+              >
+                <FaXTwitter className="h-6 w-auto max-w-full hover:text-[#ff8563] transition-all object-contain md:h-10" />
+              </a>
+              <a href="https://www.tiktok.com/@reachthefinals"
+                target="_blank"
+              >
+                <FaTiktok className="h-6 w-auto max-w-full hover:text-[#ff8563] transition-all object-contain md:h-10" />
+              </a>
+              <a href="https://www.youtube.com/@reachthefinals"
+                target="_blank"
+              >
+                <FaYoutube className="h-6 w-auto max-w-full hover:text-[#ff8563] transition-all object-contain md:h-10" />
+              </a>
+              <a href="https://www.twitch.tv/thefinals"
+                target="_blank"
+              >
+                <FaTwitch className="h-6 w-auto max-w-full hover:text-[#ff8563] transition-all object-contain md:h-10" />
+              </a>
             </div>
           </div>
         </address>
+
 
         <section aria-label="Partner logos">
           <div className="grid w-full grid-cols-2 items-center justify-items-center gap-6 sm:grid-cols-3 lg:grid-cols-5">

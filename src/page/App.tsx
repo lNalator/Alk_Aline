@@ -17,11 +17,6 @@ export const App = (): JSX.Element => {
     onTapStart: onHeroTapStart,
   } = useTogglePress();
 
-  const orderButtonColors = {
-    rest: { color: "#ff8563", backgroundColor: "#000000" },
-    hover: { color: "#ffffff", backgroundColor: "#ff8563" },
-  };
-
   return (
     <main
       className="flex w-full flex-col overflow-x-clip bg-white"
