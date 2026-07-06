@@ -23,8 +23,14 @@ export const App = (): JSX.Element => {
   };
 
   return (
-    <main className="flex w-full flex-col overflow-x-clip bg-white">
-      <section className="relative isolate min-h-[80svh] w-full overflow-hidden bg-black">
+    <main
+      className="flex w-full flex-col overflow-x-clip bg-white"
+      style={{ scrollBehavior: "smooth" }}
+    >
+      <section
+        id="top"
+        className="relative isolate min-h-[80svh] w-full overflow-hidden bg-black"
+      >
         <img
           src={HeaderBG}
           alt=""
@@ -63,6 +69,9 @@ export const App = (): JSX.Element => {
           <button
             type="button"
             className="rounded-[25px] bg-[#ff8563] px-6 py-2 font-h1 text-[28px] font-[number:var(--h1-font-weight)] leading-none tracking-[var(--h1-letter-spacing)] text-white transition-colors hover:bg-white hover:text-[#ff8563] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:px-8 sm:py-2.5 sm:text-[36px] lg:px-10 lg:py-3 lg:text-[48px] [font-style:var(--h1-font-style)]"
+            onClick={() => {
+              window.open("https://shop.embark-studios.com/pages/the-finals", "_blank")
+            }}
           >
             Order Now
           </button>
